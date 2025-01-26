@@ -25,3 +25,5 @@ while (my $line = <$fh>) { # $line will be local to this block b/c it's a loop
 
 print "length 3: ".$wordLengths{3}."\n"; # test
 print "length 1: ".$wordLengths{1}; # test; outputs 26 b/c the file has all 26 singular letters
+
+# close the file?
