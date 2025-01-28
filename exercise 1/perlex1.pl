@@ -1,12 +1,9 @@
 # Anjali Narang s1328134
-# CS 371-01
-# Scripting Languages
+# CS 371-01 Scripting Languages
 # Spring 2025
 
- # The english.sorted file contains a list of words of variable length. 
- # Write perlex1.pl to find the number of occurrences of each word length in english.sorted. 
- # That is, find and print the number of words in english.sorted that are one character long, 
- # two characters long, three characters long and so on. 
+# perlex1.pl
+# Exercise 1: Find and output number of occurrences of each word length in english.sorted file
 
 # Hash implementation
 # wrote before 1/28 class
