@@ -17,13 +17,14 @@ my $wordLengths; # hash to map lengths as key to count
 
 while (my $line = <$file>) {
    chomp($line); # remove newline character at the end
-   $wordLengths{length($line)}++;  # add 1 to the corresponding count in hash
+   $wordLengths{length($line)}++; # add 1 to the corresponding count in hash
 }
 
-close($file) # do not need the file anymore
+close($file); # do not need the file anymore
 
-print “Word length \t Occurrences \n\n”; # column headers
+print "Word length \t Occurrences \n\n"; # column headers
 
-foreach my $length (keys %wordLengths) { # for each key in the hash
-	print “$length \t\t $wordLengths{$length} \n”;
+# below I sort keys based on numerical order
+foreach my $length (sort {$a <=> $b} keys %wordLengths) { # for each key in the hash
+	print "$length \t\t $wordLengths{$length} \n";
 }
