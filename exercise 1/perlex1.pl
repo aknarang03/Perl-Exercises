@@ -8,7 +8,7 @@
 # Hash implementation
 # wrote before 1/28 class
 
-my $filename = "english.sorted";
+my $filename = "../english.sorted";
 
 # open in read mode or print error if can't open
 open(my $file, "<", $filename) or die "Cannot open $filename";
