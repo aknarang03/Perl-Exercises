@@ -13,7 +13,8 @@ my $filename = "../english.sorted";
 # open in read mode or print error if can't open
 open(my $file, "<", $filename) or die "Cannot open $filename";
 
-my $wordLengths; # hash to map lengths as key to count
+my %wordLengths; # hash to map lengths as key to count
+# use % when referring to hash; use $ when referring to element of hash
 
 while (my $line = <$file>) {
    chomp($line); # remove newline character at the end
